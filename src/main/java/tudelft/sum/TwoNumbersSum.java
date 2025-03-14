@@ -24,7 +24,10 @@ class TwoNumbersSum {
             }
             result.add(i, total);
         }
-        result.add(complement);
+        if (complement != 0){
+            result.add(complement);
+        }
+
         return result;
     }
 }
